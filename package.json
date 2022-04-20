@@ -1,9 +1,7 @@
-
-
-
 {
-    "engines": { "node" : "12.13.0" },
-
+  "engines": {
+    "node": "12.13.0"
+  },
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
@@ -11,9 +9,8 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest",
-"start": "node server/server.js",
+    "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
-    
   },
   "dependencies": {
     "-": "^0.0.1",
