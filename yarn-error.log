@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-test-renderer@16.0.0
+  C:\Program Files\nodejs\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add extract-text-webpack-plugin@3.0.0
 
 PATH: 
-  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Acer\AppData\Roaming\npm
+  C:\Users\Acer\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Acer\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\nodejs;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Acer\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.18
@@ -22,6 +22,8 @@ npm manifest:
     "scripts": {
       "serve": "live-server public/",
       "build": "webpack",
+      "build:dev": "webpack",
+      "build:prod": "webpack -p --env production",
       "dev-server": "webpack-dev-server",
       "test": "jest"
     },
@@ -45,6 +47,7 @@ npm manifest:
       "react-modal": "2.2.2",
       "react-redux": "5.0.5",
       "react-router-dom": "4.1.2",
+      "react-test-renderer": "16.0.0",
       "redux": "3.7.2",
       "sass-loader": "7.3.1",
       "style-loader": "0.18.2",
@@ -6908,6 +6911,14 @@ Lockfile:
       path-to-regexp "^1.7.0"
       prop-types "^15.6.1"
       warning "^4.0.1"
+  
+  react-test-renderer@16.0.0:
+    version "16.0.0"
+    resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.0.0.tgz#9fe7b8308f2f71f29fc356d4102086f131c9cb15"
+    integrity sha1-n+e4MI8vcfKfw1bUECCG8THJyxU=
+    dependencies:
+      fbjs "^0.8.16"
+      object-assign "^4.1.1"
   
   react@16.0.0:
     version "16.0.0"
