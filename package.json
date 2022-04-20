@@ -2,11 +2,8 @@
 
 
 {
-  "name": "expensify",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Jayvee Ramos",
-  "license": "MIT",
+    "engines": { "node" : "12.13.0" },
+
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
@@ -16,6 +13,7 @@
     "test": "jest",
 "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
+    
   },
   "dependencies": {
     "-": "^0.0.1",
