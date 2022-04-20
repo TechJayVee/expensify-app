@@ -10,7 +10,8 @@
     "dev-server": "webpack-dev-server",
     "test": "jest",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "heroku-postbuild": "yarn run build:prod",
+   
   },
   "dependencies": {
     "-": "^0.0.1",
@@ -41,7 +42,8 @@
     "uuid": "3.1.0",
     "validator": "8.0.0",
     "webpack": "3.1.0",
-    "webpack-dev-server": "2.5.1"
+    "webpack-dev-server": "2.5.1",
+    "private":"true"
   },
   "devDependencies": {
     "babel-core": "^7.0.0-bridge.0",
