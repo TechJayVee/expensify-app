@@ -3,7 +3,6 @@
     "node": "12.13.0"
   },
   "scripts": {
- 
     "build": "webpack",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
@@ -18,6 +17,7 @@
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "7.1.1",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.23.0",
@@ -26,6 +26,7 @@
     "extract-text-webpack-plugin": "3.0.0",
     "moment": "^2.29.3",
     "node-sass": "4.14.1",
+    "numeral": "2.0.6",
     "react": "16.0.0",
     "react-addons-shallow-compare": "15.6.0",
     "react-dates": "12.7.0",
@@ -33,15 +34,12 @@
     "react-modal": "2.2.2",
     "react-redux": "5.0.5",
     "react-router-dom": "4.1.2",
- 
     "redux": "3.7.2",
     "sass-loader": "7.3.1",
     "style-loader": "0.18.2",
     "uuid": "3.1.0",
     "validator": "8.0.0",
-    "webpack": "3.1.0",
-
-    "babel-core": "^7.0.0-bridge.0"
+    "webpack": "3.1.0"
   },
   "devDependencies": {
     "jest": "23.6.0",

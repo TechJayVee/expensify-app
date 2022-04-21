@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add chalk --dev
+  C:\Program Files\nodejs\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add numeral@2.0.6
 
 PATH: 
   C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;;C:\Users\Acer\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ECONNABORTED 104.16.24.35:443
+  Error: connect ECONNABORTED 104.16.20.35:443
       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1128:14)
 
 npm manifest: 
@@ -23,13 +23,13 @@ npm manifest:
       "node": "12.13.0"
     },
     "scripts": {
-      "serve": "live-server public/",
+   
       "build": "webpack",
       "build:dev": "webpack",
       "build:prod": "webpack -p --env production",
       "dev-server": "webpack-dev-server",
       "test": "jest",
-      "start": "node server/server.js",
+      "start": "node public/server/server.js",
       "heroku-postbuild": "yarn run build:prod"
     },
     "dependencies": {
@@ -44,7 +44,6 @@ npm manifest:
       "css-loader": "0.28.4",
       "express": "4.15.4",
       "extract-text-webpack-plugin": "3.0.0",
-      "live-server": "^1.2.1",
       "moment": "^2.29.3",
       "node-sass": "4.14.1",
       "react": "16.0.0",
@@ -54,18 +53,21 @@ npm manifest:
       "react-modal": "2.2.2",
       "react-redux": "5.0.5",
       "react-router-dom": "4.1.2",
-      "react-test-renderer": "16.0.0",
+   
       "redux": "3.7.2",
       "sass-loader": "7.3.1",
       "style-loader": "0.18.2",
       "uuid": "3.1.0",
       "validator": "8.0.0",
       "webpack": "3.1.0",
-      "webpack-dev-server": "2.5.1"
+  
+      "babel-core": "^7.0.0-bridge.0"
     },
     "devDependencies": {
-      "babel-core": "^7.0.0-bridge.0",
-      "jest": "23.6.0"
+      "jest": "23.6.0",
+      "live-server": "^1.2.1",
+      "react-test-renderer": "16.0.0",
+      "webpack-dev-server": "2.5.1"
     }
   }
 
